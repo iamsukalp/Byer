@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "391905934370",
+    "firebase_url": "https://byer-retailer-default-rtdb.firebaseio.com",
+    "project_id": "byer-retailer",
+    "storage_bucket": "byer-retailer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391905934370:android:1b6d2f1dfc59e955831e7b",
+        "android_client_info": {
+          "package_name": "com.flashotech.byerconsole"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391905934370-elapa3lp2ucqb0op4l7uof0amqu2ig91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flashotech.byerconsole",
+            "certificate_hash": "81cae3928638796e79c438a88d0b8a300ef85807"
+          }
+        },
+        {
+          "client_id": "391905934370-llvbvdf2i3psdrf6pm40n2pfho5s3gsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flashotech.byerconsole",
+            "certificate_hash": "9cba65d31793fad88f934e4ee722bd60b3d3d32b"
+          }
+        },
+        {
+          "client_id": "391905934370-egl6jhcu4qce24dsq58gp5kb89f9i86g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8lwE5zFSA5Rgi_7mg9SG6EANCZWZz2Zg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391905934370-egl6jhcu4qce24dsq58gp5kb89f9i86g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391905934370:android:8b982219d9ce4074831e7b",
+        "android_client_info": {
+          "package_name": "com.flashotech.byerretailer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391905934370-222akfunisc2rt99jk8m030qtjtcn1ke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flashotech.byerretailer",
+            "certificate_hash": "9cba65d31793fad88f934e4ee722bd60b3d3d32b"
+          }
+        },
+        {
+          "client_id": "391905934370-4kq2mfnj81c7hc043746nlbethqm1rgo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flashotech.byerretailer",
+            "certificate_hash": "81cae3928638796e79c438a88d0b8a300ef85807"
+          }
+        },
+        {
+          "client_id": "391905934370-egl6jhcu4qce24dsq58gp5kb89f9i86g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8lwE5zFSA5Rgi_7mg9SG6EANCZWZz2Zg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391905934370-egl6jhcu4qce24dsq58gp5kb89f9i86g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

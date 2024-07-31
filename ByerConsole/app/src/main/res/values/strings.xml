@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Byer Console</string>
+    <string-array name="Grocery_sub">
+        <item>Sub-category</item>
+        <item>Dry Food</item>
+        <item>Dairy</item>
+        <item>Spices</item>
+        <item>Fresh Produce</item>
+        <item>Perishables</item>
+        <item>Beverages</item>
+        <item>Processed Food</item>
+        <item>Essentials</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

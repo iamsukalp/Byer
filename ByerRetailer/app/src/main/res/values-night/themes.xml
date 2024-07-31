@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ByerRetailer" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/logo_color</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/logo_color</item>
+        <item name="colorSecondaryVariant">@color/logo_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:fontFamily">@font/basically_a_sans_serif_regular</item>
+        <item name="fontFamily">@font/basically_a_sans_serif_regular</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerStyle</item>
+        <item name="android:listViewStyle">@style/ListFont</item>
+    </style>
+
+    <!--Spinner Item Click Ripple Effect-->
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:textColor">@color/logo_color</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ListFont" parent="@android:style/Widget.ListView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ChipTextStyle_Selected">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ChipTextStyle_UnSelected">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

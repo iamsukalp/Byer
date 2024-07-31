@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditProductActivity">
+
+    <TextView
+        android:id="@+id/editItem_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="24dp"
+        tools:text="Item name"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/editItem_soldPercentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/editItem_soldPercentage"
+        app:layout_constraintEnd_toEndOf="@+id/editItem_soldPercentage"
+        app:layout_constraintStart_toStartOf="@+id/editItem_soldPercentage"
+        app:layout_constraintTop_toTopOf="@+id/editItem_soldPercentage"
+        tools:text="Sold"/>
+
+    <ProgressBar
+        android:id="@+id/editItem_soldPercentage"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="80"
+        />
+
+
+
+    <TextView
+        android:id="@+id/editItem_soldLegend"
+        android:text="Sold : 100"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/sold_legend_drawable"
+        app:layout_constraintTop_toBottomOf="@id/editItem_soldPercentage"
+        app:layout_constraintStart_toStartOf="@id/editItem_soldPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/editItem_totalLegend"
+        app:layout_constraintEnd_toEndOf="@id/editItem_soldPercentage"
+        android:text="Total : 100"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/total_legend_drawable"
+        app:layout_constraintTop_toBottomOf="@id/editItem_soldPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_splitting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.5"
+        android:orientation="vertical"
+        />
+
+    <EditText
+        android:id="@+id/editItem_mrp"
+        app:layout_constraintStart_toStartOf="@id/editItem_reset_switch"
+        app:layout_constraintEnd_toEndOf="@id/guideline_splitting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        android:background="@drawable/bottombar_bg_logo"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:layout_marginEnd="10dp"
+        tools:hint="MRP: Rs 500"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="MRP: Rs 500" />
+
+    <EditText
+        android:id="@+id/editItem_sp"
+        app:layout_constraintStart_toStartOf="@id/guideline_splitting"
+        app:layout_constraintEnd_toEndOf="@id/editItem_reset_switch"
+        app:layout_constraintBottom_toBottomOf="@id/editItem_mrp"
+        android:background="@drawable/bottombar_bg_logo"
+        android:layout_marginStart="10dp"
+        android:inputType="numberDecimal"
+        android:hint="SP: Rs 400"
+        android:padding="10dp"
+        android:autofillHints="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.0"
+        android:orientation="vertical"
+        />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="@id/editItem_reset_switch"
+        app:layout_constraintEnd_toEndOf="@id/editItem_reset_switch"
+        app:layout_constraintTop_toBottomOf="@id/editItem_mrp"
+        app:layout_constraintBottom_toTopOf="@id/editItem_reset_switch"
+        android:text="Restock item\n(This will reset sold and total count)"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/editItem_totalCount_container"
+        app:layout_constraintStart_toStartOf="@id/editItem_reset_switch"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/editItem_mrp"
+        app:layout_constraintBottom_toTopOf="@id/editItem_reset_switch"
+        android:background="@drawable/edit_item_reset_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.9"
+            android:layout_gravity="center"
+            android:id="@+id/editItem_totalCount"
+            android:background="@android:color/transparent"
+            android:hint="Total available quantity*"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="false"
+            android:inputType="number" />
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/editItem_totalCount_cancel"
+            android:src="@drawable/ic_close_color"
+            android:padding="10dp"
+            android:alpha="0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/editItem_reset_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_item_reset_bg"
+        android:clickable="false"
+        android:indeterminate="false"
+        android:max="89"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/ic_restock_24"
+        android:thumbOffset="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/editItem_reset_switch"
+        app:layout_constraintStart_toStartOf="@id/editItem_reset_switch"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695">
+
+        <TextView
+            android:id="@+id/shimmer_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Restock Item →"
+            android:textAlignment="center"
+            android:textColor="@color/logo_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/editItem_saveBtn"
+        app:layout_constraintStart_toStartOf="@id/editItem_reset_switch"
+        app:layout_constraintEnd_toEndOf="@id/editItem_reset_switch"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        android:text="save"
+        android:background="@drawable/order_accept_btn_bg"
+        android:textColor="@color/white"
+        android:letterSpacing="0.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

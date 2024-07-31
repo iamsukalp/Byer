@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+
+    <group android:checkableBehavior="single" android:id="@+id/userItems">
+        <item android:id="@+id/profileFragment"
+            android:title="Profile"
+            android:icon="@drawable/ic_profile"/>
+        <item android:id="@+id/settingsFragment"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"/>
+        <item android:id="@+id/accountBalanceFragment"
+            android:title="Account Balance"
+            android:icon="@drawable/ic_account"/>
+
+    </group>
+
+   <group android:checkableBehavior="single" android:id="@+id/extraItem">
+       <item android:id="@+id/referAPartnerFragment"
+           android:icon="@drawable/ic_delivery"
+           android:title="Refer a partner"/>
+       <item
+           android:icon="@drawable/ic_about"
+           android:title="About Us"/>
+   </group>
+
+
+
+</menu>

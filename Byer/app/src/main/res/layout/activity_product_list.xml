@@ -1,0 +1,128 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProductListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayout"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsedToolbar"
+            app:titleEnabled="true"
+            android:fitsSystemWindows="true"
+            android:transitionName="nameTransition"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarExpanded"
+            app:collapsedTitleTextAppearance="@style/CollapsingToolbarCollapsed"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/productShopImage"
+                android:transitionName="imageTransition"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="250dp"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                android:layout_height="?attr/actionBarSize"/>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:layout_anchor="@id/appbarLayout"
+        app:layout_anchorGravity="bottom|end|right"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_phone"
+        app:tint="@color/white"
+        android:id="@+id/productContactBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/productSearchView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp"
+                android:elevation="8dp"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@drawable/searchview_bg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/home_notification_container"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                app:layout_constraintStart_toEndOf="@id/productSearchView"
+                app:layout_constraintTop_toTopOf="@id/productSearchView"
+                app:layout_constraintBottom_toBottomOf="@id/productSearchView"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/product_cartBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_cart_btn"
+                    android:tint="@color/logo_color"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textAlignment="center"
+                    android:text="3"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/cart_bage_bg"
+                    android:id="@+id/product_cartBtn_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productSubcategoryList"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/productSearchView"
+            android:layout_height="150dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productList"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintTop_toBottomOf="@id/productSubcategoryList"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Byer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Rs" translatable="false">\u20B9</string>
+    <string name="divider" translatable="false">/</string>
+    <string name="search_for_store_item">Search for item</string>
+    <string name="clear_search_history">Clear Search History</string>
+    <string name="home">Home</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="log_in"><u>Login</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros orci, lobortis nec laoreet at, sollicitudin ut nisi. Aliquam eget nisl vel dui pharetra suscipit et eu orci. Sed suscipit purus lectus, non porttitor est scelerisque eu. Fusce ultrices iaculis ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eu mattis leo. Ut bibendum dui in tempor sollicitudin. Cras et tortor quis nisi ultrices ullamcorper quis eu quam. Fusce vitae sem euismod, eleifend ante non, posuere lorem. Nam consectetur vestibulum feugiat. Cras tempor mauris quis mi dapibus mollis. Suspendisse sit amet lectus ut massa lobortis vulputate quis sit amet neque. Sed feugiat lectus ut magna eleifend, vel sodales ex efficitur. Duis dapibus lectus ac venenatis vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id eros ornare lorem facilisis vehicula.
+
+Maecenas interdum purus nunc, et gravida augue pellentesque et. Nunc a quam odio. Ut vel dignissim nulla. Quisque non risus ut neque posuere accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus malesuada dignissim convallis. Sed molestie bibendum dui, eu sodales justo aliquet et. Donec vitae elit lectus. Nullam imperdiet ultricies hendrerit. Vivamus suscipit, lectus vel tempus sagittis, enim ligula mollis neque, sed consequat nulla eros a leo. Vestibulum consectetur, justo eget euismod consectetur, erat mauris varius augue, ac suscipit mi tellus non ante. Suspendisse a magna risus. Maecenas et elementum lacus, eget pulvinar elit. Quisque finibus neque ex, eget semper enim posuere nec. Nullam ac molestie turpis, pulvinar aliquam lorem. Sed et hendrerit sapien, vestibulum iaculis justo.
+
+In hac habitasse platea dictumst. Nullam iaculis commodo aliquet. Donec eget ipsum vitae nisi varius sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In semper sodales nisi, a ultrices nibh dapibus varius. Etiam dui nulla, sollicitudin id enim faucibus, facilisis condimentum sem. Quisque sed euismod sem.
+
+Phasellus at nisl lacus. Mauris sit amet diam sem. Praesent vehicula laoreet augue vel convallis. Quisque pharetra purus purus, elementum pretium erat malesuada vel. Ut hendrerit sodales semper. In lacinia nisl eu justo varius, at pharetra risus aliquam. Fusce id aliquet felis, eget vestibulum felis. Duis vulputate, arcu id lobortis consequat, ipsum dui tincidunt ligula, at elementum quam felis non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra metus non turpis efficitur pharetra.
+
+Nunc leo ligula, sagittis et libero eget, dignissim dignissim metus. Vivamus tempus tellus id porta molestie. Curabitur condimentum vel elit vel suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vestibulum urna non odio euismod, quis porttitor arcu posuere. Etiam tempor ut neque et convallis. Nullam quis aliquam dui. Aliquam erat volutpat. Aenean tellus orci, egestas eu viverra eu, mollis ac est. Suspendisse potenti. Phasellus molestie, urna non tristique vehicula, dui lorem commodo mauris, ac elementum urna justo ut quam. In hac habitasse platea dictumst. Aliquam erat volutpat.</string>
+</resources>

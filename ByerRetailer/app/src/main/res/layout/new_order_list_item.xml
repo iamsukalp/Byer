@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:cardUseCompatPadding="true"
+    android:padding="16dp"
+    app:cardElevation="4dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:paddingBottom="16dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/new_order_user_name"
+        android:text="User Name"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Order Id"
+        android:id="@+id/new_order_id"
+        app:layout_constraintStart_toStartOf="@+id/new_order_user_name"
+        app:layout_constraintTop_toBottomOf="@id/new_order_user_name"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/new_order_amount"
+        app:layout_constraintStart_toStartOf="@id/new_order_user_name"
+        app:layout_constraintTop_toBottomOf="@id/new_order_id"
+        android:layout_marginTop="12dp"
+        android:text="Amount: Rs. 500"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/new_orderDeliveryMode"
+        app:layout_constraintStart_toStartOf="@id/new_order_user_name"
+        app:layout_constraintTop_toBottomOf="@id/new_order_amount"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_home_delivery"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+    <ImageView
+        android:id="@+id/new_orderPaymentMode"
+        app:layout_constraintStart_toEndOf="@id/new_orderDeliveryMode"
+        app:layout_constraintTop_toTopOf="@id/new_orderDeliveryMode"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_gpay"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+    <ImageView
+        android:id="@+id/new_orderPaymentStatus"
+        app:layout_constraintStart_toEndOf="@id/new_orderPaymentMode"
+        app:layout_constraintTop_toTopOf="@id/new_orderPaymentMode"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_completed_order"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/new_orderAcceptBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/order_accept_btn_bg"
+        android:textSize="10sp"
+        android:text="Accpet"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/new_orderDeclineBtn"
+        app:layout_constraintEnd_toEndOf="@id/new_orderAcceptBtn"
+        app:layout_constraintTop_toBottomOf="@id/new_orderAcceptBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Decline"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/order_reject_btn_bg"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/change_shop_availability_dialog_bg"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="30dp"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/dialog_shop_availability_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/retailer_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/dialog_shop_availability_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_shop_availability_image"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialog_shop_availability_cancel"
+        android:background="@drawable/dialog_button_bg"
+        android:text="Cancel"
+        android:textColor="@color/logo_color"
+        app:layout_constraintEnd_toEndOf="@id/dialog_shop_availability_label"
+        app:layout_constraintTop_toBottomOf="@id/dialog_shop_availability_label"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialog_shop_availability_confirm"
+        android:background="@drawable/dialog_button_bg"
+        android:text="Confirm"
+        android:textColor="@color/logo_color"
+        app:layout_constraintEnd_toStartOf="@id/dialog_shop_availability_cancel"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_shop_availability_cancel"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

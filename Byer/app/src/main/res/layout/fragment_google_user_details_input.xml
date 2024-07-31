@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.GoogleUserDetailsInputFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/googleUserDetailsInput_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintVertical_bias="0.17"
+        android:src="@drawable/ic_profile_placeholder"
+        app:civ_border_color="@color/logo_color"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/googleUserDetailsInput_imageEditBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/logo_color"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/googleUserDetailsInput_image"
+        app:layout_constraintEnd_toEndOf="@id/googleUserDetailsInput_image"
+        android:src="@drawable/ic_camera"
+        android:translationZ="100dp" />
+
+
+    <EditText
+        android:id="@+id/googleUserDetailsInput_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:background="@drawable/bottombar_bg_logo"
+        android:hint="Name"
+        android:inputType="textNoSuggestions"
+        android:paddingHorizontal="36dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/logo_color"
+        android:textColorHint="@color/logo_color"
+        android:textCursorDrawable="@null"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/googleUserDetailsInput_continueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottombar_bg_logo"
+        android:paddingHorizontal="30dp"
+        android:text="Continue"
+        app:layout_constraintEnd_toEndOf="@id/googleUserDetailsInput_name"
+        app:layout_constraintTop_toBottomOf="@id/googleUserDetailsInput_name"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/logo_color"
+        android:textSize="18sp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.RetailerDetailsFragment">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/retailerDetailsShopImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintVertical_bias="0.17"
+            android:src="@drawable/ic_profile_placeholder"
+            app:civ_border_color="@color/logo_color"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/retailerDetailsEditImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/logo_color"
+            app:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/retailerDetailsShopImage"
+            app:layout_constraintEnd_toEndOf="@id/retailerDetailsShopImage"
+            android:src="@drawable/ic_camera"
+            android:translationZ="100dp" />
+
+
+    <EditText
+        android:id="@+id/retailerDetailsShopName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:background="@drawable/bottombar_bg_logo"
+        android:hint="Shop Name"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:paddingHorizontal="36dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/logo_color"
+        android:textColorHint="@color/logo_color"
+        android:textCursorDrawable="@null"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <EditText
+        android:id="@+id/retailerDetailsEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bottombar_bg_logo"
+        android:hint="Email"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:paddingHorizontal="36dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/logo_color"
+        android:textColorHint="@color/logo_color"
+        android:textCursorDrawable="@null"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retailerDetailsShopName"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/retailerDetailsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:entries="@array/category_spinner"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/retailerDetailsEmail"
+        app:layout_constraintStart_toStartOf="@+id/retailerDetailsEmail"
+        app:layout_constraintTop_toBottomOf="@+id/retailerDetailsEmail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retailerDetailsSaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bottombar_bg_logo"
+        android:paddingHorizontal="30dp"
+        android:text="Continue"
+        android:textColor="@color/logo_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/retailerDetailsEmail"
+        app:layout_constraintTop_toBottomOf="@+id/retailerDetailsSpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

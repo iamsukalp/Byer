@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ServicesActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/services_title_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:transitionName="service_title_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:src="@drawable/marketing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/services_title_text"
+        app:layout_constraintStart_toStartOf="@id/services_title_image"
+        app:layout_constraintEnd_toEndOf="@id/services_title_image"
+        app:layout_constraintTop_toBottomOf="@id/services_title_image"
+        android:layout_marginTop="24dp"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:text="Details about the services"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+        <ViewSwitcher
+            android:id="@+id/services_options_viewSwitcher"
+            app:layout_constraintStart_toStartOf="@id/services_title_image"
+            app:layout_constraintEnd_toEndOf="@id/services_title_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.airbnb.lottie.LottieAnimationView
+                    app:lottie_rawRes="@raw/coming_soon_anim"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+        </ViewSwitcher>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

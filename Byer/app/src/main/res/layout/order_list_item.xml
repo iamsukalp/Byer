@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="16dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/order_retailer_name"
+            android:text="User Name"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Order Id"
+            android:id="@+id/order_id"
+            app:layout_constraintStart_toStartOf="@+id/order_retailer_name"
+            app:layout_constraintTop_toBottomOf="@id/order_retailer_name"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/order_amount"
+            app:layout_constraintStart_toStartOf="@id/order_retailer_name"
+            app:layout_constraintTop_toBottomOf="@id/order_id"
+            android:layout_marginTop="12dp"
+            android:text="Amount: Rs. 500"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/orderDeliveryMode"
+            app:layout_constraintStart_toStartOf="@id/order_retailer_name"
+            app:layout_constraintTop_toBottomOf="@id/order_amount"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_delivery_color_16"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <ImageView
+            android:id="@+id/orderPaymentMode"
+            app:layout_constraintStart_toEndOf="@id/orderDeliveryMode"
+            app:layout_constraintTop_toTopOf="@id/orderDeliveryMode"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_gpay"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <ImageView
+            android:id="@+id/orderPaymentStatus"
+            app:layout_constraintStart_toEndOf="@id/orderPaymentMode"
+            app:layout_constraintTop_toTopOf="@id/orderPaymentMode"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_completed_order"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+
+        <TextView
+            android:id="@+id/order_time"
+            app:layout_constraintStart_toEndOf="@id/order_retailer_name"
+            app:layout_constraintTop_toTopOf="@id/order_retailer_name"
+            android:layout_marginStart="16dp"
+            android:drawableStart="@drawable/ic_order_time"
+            android:textSize="12sp"
+            android:drawablePadding="5dp"
+            android:text="16:25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/order_status"
+            app:layout_constraintStart_toStartOf="@id/order_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/orderPaymentStatus"
+            android:textSize="12sp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginEnd="12dp"
+            android:text="New"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

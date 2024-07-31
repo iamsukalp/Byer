@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_graph.xml"
+    app:startDestination="@id/flashFragment">
+
+    <fragment
+        android:id="@+id/flashFragment"
+        android:name="com.byer.byer.Fragments.FlashFragment"
+        android:label="fragment_flash"
+        tools:layout="@layout/fragment_flash" >
+        <action
+            android:id="@+id/action_flashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.byer.byer.Fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userDetailsFragment"
+            app:destination="@id/userDetailsFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_googlePhoneInputFragment"
+            app:destination="@id/googlePhoneInputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.byer.byer.Fragments.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_userDetailsFragment"
+            app:destination="@id/userDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="com.byer.byer.Fragments.UserDetailsFragment"
+        android:label="fragment_user_details"
+        tools:layout="@layout/fragment_user_details" >
+        <argument
+            android:name="token"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="phone"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/googlePhoneInputFragment"
+        android:name="com.byer.byer.Fragments.GooglePhoneInputFragment"
+        android:label="fragment_google_phone_input"
+        tools:layout="@layout/fragment_google_phone_input" >
+        <argument
+            android:name="token"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+
+        <action
+            android:id="@+id/action_googlePhoneInputFragment_to_googleUserDetailsInputFragment"
+            app:destination="@id/googleUserDetailsInputFragment" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/googleUserDetailsInputFragment"
+        android:name="com.byer.byer.Fragments.GoogleUserDetailsInputFragment"
+        android:label="fragment_google_user_details_input"
+        tools:layout="@layout/fragment_google_user_details_input" >
+        <argument
+            android:name="token"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="phone"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+</navigation>

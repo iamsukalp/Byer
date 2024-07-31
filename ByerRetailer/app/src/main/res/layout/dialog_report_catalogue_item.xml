@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="50dp"
+    android:background="@drawable/change_shop_availability_dialog_bg"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Dialog_reportItem_anim"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        app:lottie_rawRes="@raw/report_animation"
+        android:layout_height="200dp"/>
+
+    <EditText
+        android:id="@+id/Dialog_reportItem_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Dialog_reportItem_anim"
+        android:background="@drawable/button_invert_bg"
+        android:hint="Name of the product"
+        android:textColorHint="@color/white"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dialog_reportItem_cancelBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Cancel"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_close_color"
+        android:background="@drawable/dialog_button_bg"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/logo_color"
+        app:layout_constraintTop_toBottomOf="@id/Dialog_reportItem_name"
+    />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Dialog_reportItem_reportBtn"
+        app:layout_constraintEnd_toStartOf="@id/Dialog_reportItem_cancelBtn"
+        android:text="Confirm"
+        android:drawablePadding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:drawableStart="@drawable/ic_confirm"
+        android:background="@drawable/dialog_button_bg"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="25dp"
+        android:textColor="@color/logo_color"
+        app:layout_constraintTop_toBottomOf="@id/Dialog_reportItem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

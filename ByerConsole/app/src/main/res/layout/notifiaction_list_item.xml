@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    app:cardCornerRadius="25dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="8dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notification_list_item_layout"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginHorizontal="24dp"
+            android:id="@+id/notification_list_item_image"
+            android:src="@drawable/ic_report_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/notification_list_item_image"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="12dp"
+            android:id="@+id/notification_list_item_label"
+
+            android:textSize="14sp"
+            android:text="Request made to byer for adding item to catalogue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            app:layout_constraintStart_toStartOf="@id/notification_list_item_label"
+            app:layout_constraintTop_toBottomOf="@id/notification_list_item_label"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"
+            android:text="Item Name: Chocolate"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="14sp"
+
+            android:autoSizeMinTextSize="10dp"
+            android:textSize="14sp"
+            android:id="@+id/notification_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/notification_list_item_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/notification_list_item_name"
+            android:text="Date: 26/01/2021"
+            android:layout_marginEnd="12dp"
+
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

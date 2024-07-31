@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CatalogueActivity">
+
+    <Spinner
+        android:id="@+id/sub_category_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_image_container"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toStartOf="@id/sub_category_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sub_category_spinner"
+        android:layout_marginHorizontal="25dp"
+        app:cardCornerRadius="16dp"
+        android:layout_width="0dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_add_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/item_name"
+        app:layout_constraintTop_toBottomOf="@id/item_image_container"
+        android:layout_marginTop="50dp"
+        android:hint="Item Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/item_brand"
+        android:hint="Brand"
+        app:layout_constraintTop_toBottomOf="@id/item_name"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/logo_color"
+        android:text="Add item to catalogue"
+        app:layout_constraintVertical_bias="0.8"
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

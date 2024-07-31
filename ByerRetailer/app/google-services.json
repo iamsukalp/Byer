@@ -1,0 +1,146 @@
+{
+  "project_info": {
+    "project_number": "214848098135",
+    "firebase_url": "https://byer-315007-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "byer-315007",
+    "storage_bucket": "byer-315007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214848098135:android:8d5e0d8cf804a06329f812",
+        "android_client_info": {
+          "package_name": "com.byer.byer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214848098135-b0cnrigbem27aip796rm5lr33ocvlnv6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byer.byer",
+            "certificate_hash": "ff60883680e5efa34213863b3c405819f5652cbd"
+          }
+        },
+        {
+          "client_id": "214848098135-n77k8adgjv0b1qm7qbd3ea95h2cmgru9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byer.byer",
+            "certificate_hash": "81cae3928638796e79c438a88d0b8a300ef85807"
+          }
+        },
+        {
+          "client_id": "214848098135-uktb0b7onp6v5esemiekssfejuq5clcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9F17EpHGLZRN-W-n2urqeKNbvTU8EDEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214848098135-uktb0b7onp6v5esemiekssfejuq5clcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214848098135:android:2283a57df7eeb73d29f812",
+        "android_client_info": {
+          "package_name": "com.byer.byerdeliverypartner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214848098135-lh3k76o68kf8vai3dm3krie17b3gncje.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byer.byerdeliverypartner",
+            "certificate_hash": "81cae3928638796e79c438a88d0b8a300ef85807"
+          }
+        },
+        {
+          "client_id": "214848098135-uaho94mfbgav3ca91mmsejl32f0ot8lu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byer.byerdeliverypartner",
+            "certificate_hash": "ff60883680e5efa34213863b3c405819f5652cbd"
+          }
+        },
+        {
+          "client_id": "214848098135-uktb0b7onp6v5esemiekssfejuq5clcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9F17EpHGLZRN-W-n2urqeKNbvTU8EDEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214848098135-uktb0b7onp6v5esemiekssfejuq5clcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214848098135:android:af1162500019532429f812",
+        "android_client_info": {
+          "package_name": "com.byer.byerretailer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214848098135-36ee6v2a7j9meflj8gv3bhnvjvucdsq9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byer.byerretailer",
+            "certificate_hash": "ff60883680e5efa34213863b3c405819f5652cbd"
+          }
+        },
+        {
+          "client_id": "214848098135-9ls3snqfujhgr94nvtarjilsjnbt75ar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.byer.byerretailer",
+            "certificate_hash": "81cae3928638796e79c438a88d0b8a300ef85807"
+          }
+        },
+        {
+          "client_id": "214848098135-uktb0b7onp6v5esemiekssfejuq5clcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9F17EpHGLZRN-W-n2urqeKNbvTU8EDEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214848098135-uktb0b7onp6v5esemiekssfejuq5clcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:padding="16dp"
+    app:cardElevation="4dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/order_user_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="16dp"
+            android:text="User Name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/order_id"
+            app:layout_constraintStart_toStartOf="@id/order_user_name"
+            app:layout_constraintTop_toBottomOf="@id/order_user_name"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:text="Order No."
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/order_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="16dp"
+            android:text="Amount: Rs 500"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/order_time"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="16/08/2021 16:44"
+            android:drawableStart="@drawable/ic_order_time"
+            app:layout_constraintStart_toStartOf="@id/order_user_name"
+            app:layout_constraintTop_toBottomOf="@id/order_id"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

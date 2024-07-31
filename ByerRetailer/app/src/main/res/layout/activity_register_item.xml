@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_layout"
+    android:background="@color/logo_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegisterItemActivity">
+    <LinearLayout
+        android:id="@+id/registerItem_search_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:elevation="16dp"
+        android:background="@drawable/bottombar_bg_logo"
+        android:layout_marginHorizontal="24dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/registerItem_searchBar"
+            android:hint="@string/search_for_store_item"
+            android:inputType="text"
+            android:lines="1"
+            android:background="@color/white"
+            android:textColorHint="@color/logo_color"
+            android:textColor="@color/logo_color"
+            android:textCursorDrawable="@null"
+            android:layout_weight="0.9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/registerItem_searchBtn"
+            android:src="@drawable/ic_search"
+            android:tint="@color/logo_color"
+            android:paddingHorizontal="12dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:id="@+id/registerItem_progressBtn"
+            android:src="@drawable/ic_search"
+            android:visibility="gone"
+            android:tint="@color/logo_color"
+            android:background="@android:color/transparent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+    </LinearLayout>
+
+
+    <ViewSwitcher
+        android:id="@+id/registerItem_viewSwitcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/registerItem_search_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+       <LinearLayout
+           android:id="@+id/registerItem_success_container"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical" >
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:text="Report"
+                   android:id="@+id/registerItem_banner_reportItemBtn"
+                   android:drawableStart="@drawable/ic_report_color"
+                   android:background="@android:color/transparent"
+                   android:textColor="@color/white"
+                   android:drawablePadding="5dp"
+                   android:textAllCaps="false"
+                   android:layout_margin="5dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <androidx.appcompat.widget.AppCompatButton
+                   android:text="Take a picture"
+                   android:id="@+id/registerItem_banner_CameraBtn"
+                   android:drawableStart="@drawable/ic_camera_color"
+                   android:textAllCaps="false"
+                   android:layout_margin="5dp"
+                   android:drawablePadding="5dp"
+                   android:background="@android:color/transparent"
+                   android:textColor="@color/white"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <androidx.appcompat.widget.AppCompatButton
+                   android:text="Open Gallery"
+                   android:drawableStart="@drawable/ic_gallery_color"
+                    android:id="@+id/registerItem_banner_GalleryBtn"
+                   android:textAllCaps="false"
+                   android:layout_margin="5dp"
+                   android:drawablePadding="5dp"
+                   android:background="@android:color/transparent"
+                   android:textColor="@color/white"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/registerItem_result_list"
+                   android:layout_width="match_parent"
+                   android:layout_weight="0.9"
+                   android:layout_height="0dp"/>
+
+
+       </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/registerItem_fail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="24dp"
+                    android:text="Not Found"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.2"
+                    android:id="@+id/registerItem_fail_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="60dp"
+                    android:text="send report to Buyer"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/ic_report_color"
+                    android:paddingStart="30dp"
+                    android:background="@drawable/button_invert_bg"
+                    app:layout_constraintTop_toBottomOf="@id/registerItem_fail_text"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/registerItem_reportItemBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="60dp"
+                    android:text="take a picture"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/ic_camera_color"
+                    android:paddingStart="30dp"
+                    android:background="@drawable/button_invert_bg"
+                    app:layout_constraintTop_toBottomOf="@id/registerItem_reportItemBtn"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/registerItem_CameraBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginHorizontal="60dp"
+                    android:text="select from gallery"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/ic_gallery_color"
+                    android:paddingStart="30dp"
+                    android:background="@drawable/button_invert_bg"
+                    app:layout_constraintTop_toBottomOf="@id/registerItem_CameraBtn"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/registerItem_GalleryBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </ViewSwitcher>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

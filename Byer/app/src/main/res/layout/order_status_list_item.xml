@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <View
+        android:id="@+id/order_status_completed_upper_line"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/order_status_completed_circle"
+        app:layout_constraintStart_toStartOf="@id/order_status_completed_circle"
+        app:layout_constraintEnd_toEndOf="@id/order_status_completed_circle"
+        android:background="@color/logo_color"
+        android:layout_width="2dp"
+        android:layout_height="30dp"/>
+
+
+    <ImageView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:id="@+id/order_status_completed_circle"
+        android:src="@drawable/order_status_completed_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="15dp"
+        android:layout_height="15dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/order_status_inprogress_anim"
+        app:lottie_rawRes="@raw/status_anim"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@id/order_status_completed_circle"
+        app:layout_constraintEnd_toEndOf="@id/order_status_completed_circle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <View
+        android:id="@+id/order_status_completed_lower_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order_status_completed_circle"
+        app:layout_constraintStart_toStartOf="@id/order_status_completed_circle"
+        app:layout_constraintEnd_toEndOf="@id/order_status_completed_circle"
+        android:background="@color/logo_color"
+        android:layout_width="2dp"
+        android:layout_height="30dp"/>
+    <ImageView
+        android:id="@+id/order_status_image"
+        app:layout_constraintStart_toEndOf="@id/order_status_completed_circle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/order_status_image"
+        app:layout_constraintTop_toTopOf="@id/order_status_image"
+        app:layout_constraintBottom_toBottomOf="@id/order_status_image"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/order_status_title"
+            android:text="Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/order_status_time"
+            android:text="Time"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
